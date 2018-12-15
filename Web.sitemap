@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<siteMap>
+  <siteMapNode title="Home" url="/">
+    <siteMapNode title="Bulk Orders" url="/BulkOrder.aspx">
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Pizzaplace.master.cs" Inherits="Pizzaplace" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <style>
+        
+.menu-content {
+   
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+    </style>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+         <div style="border:double darkcyan;margin-bottom:10px";>
+        <asp:Menu  CssClass="menu-content" ID="Menu1" DataSourceID="SiteMapDataSource1" runat="server"></asp:Menu>
+        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+       
+            <div style="float: right;">
+                <img src="pizaalogo.jpeg" runat="server" height="70" style="width:700px;" />
+            </div>
+            <div style="float: right; margin-right: 30px">
+                <h1>Pizaa Palace!</h1>
+            </div>
+            <div style="clear: both"></div>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
